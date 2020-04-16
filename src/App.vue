@@ -1,15 +1,16 @@
 <template>
-    <menu-barre/>
+    <liste-film/>
 </template>
 
 <script>
 
-import MenuBarre from './components/MenuBarre.vue'
+//import MenuBarre from './components/MenuBarre.vue'
+import ListeFilm from './components/ListeFilm.vue'
 
 export default {
   name: 'App',
   components: {
-    MenuBarre
+    ListeFilm
   }, 
   data: () => {
     return {
