@@ -1,15 +1,19 @@
 <template>
     <div class="menu-barre">
-        <ul id="Navigation">
-            <li><a href="menu_definir.htm">Exemple 1</a></li>
-            <li><a href="menu_formater.htm">Exemple 2</a></li>
-            <li><a href="menu_rollover.htm">Exemple 3</a></li>
-  </ul>
+        <div id="mySidenav" class="sidenav">
+          <div><a href="#" ><img src="../illustration/logo.png" id="logo"></a></div>
+          <div><a href="#"><img src="../illustration/logo-cinema.png"><span class="titre-menu">FILM</span></a></div>
+          <div><a href="#"><img src="../illustration/logo-cinema.png"><span class="titre-menu">SÉRIE</span></a></div>
+          <div><a href="#"><img src="../illustration/logo-cinema.png"><span class="titre-menu">INSCRIPTION</span></a></div>
+          <div><a href="#"><img src="../illustration/logo-cinema.png"><span class="titre-menu">ALÉATOIRE</span></a></div>
+          <div><a href="#"><img src="../illustration/logo-cinema.png"><span class="titre-menu">BOUTIQUE</span></a></div>
+        </div>
     </div>
 </template>
 
-<script>
 
+
+<script>
 export default {
   name: 'App',
   components: {
@@ -26,33 +30,27 @@ export default {
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
 
-.menu-barre{
-    background-color: black;
-    width: 6%;
-    height: 100%;
-    min-height: 100vh;
-    top: 100px;
-}
-ul#menu {
-    margin: 0; padding: 0;
-}
-ul{
-    list-style-type: none;
-}
-ul#menu li {
-    list-style: none;
-    margin: 0; padding: 0;
-    list-style-type: none;
-}
+.titre-menu{display: none;}
+#mySidenav:hover .titre-menu{display: initial;position: relative;top: -30px;color: white;font-family: 'comfortaa';font-size: 16px;}
+a{text-decoration: none;}
 
+#mySidenav{
+  position: absolute;
+  left: -10px;
+  top: -10px;
+  transition: 0.3s;
+  padding: 15px;
+  height: 97.3%;
+  text-decoration: none;
+  font-size: 20px;
+  color: white;
+  border-radius: 0 5px 5px 0;
+  background-color: rgb(0, 0, 0);
+}
+#mySidenav:hover {width: 200px;left: 0;}
+
+#logo{margin-bottom: 80px;}
+#mySidenav a img{width: 50px;padding-bottom: 20px;}
 
 </style>
