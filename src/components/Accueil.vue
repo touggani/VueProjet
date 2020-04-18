@@ -9,9 +9,9 @@
 </template>
 
 <script>
-import laligneverte from '../assets/laligneverte.jpg'
-import meninblack from '../assets/meninblack.jpg'
-import ingloriousbasterds from '../assets/ingloriousbasterds.jpg'
+//import laligneverte from '../assets/laligneverte.jpg'
+//import meninblack from '../assets/meninblack.jpg'
+//import ingloriousbasterds from '../assets/ingloriousbasterds.jpg'
 
 
 export default {
