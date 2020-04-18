@@ -1,26 +1,9 @@
 <template>
-    <liste-film/>
+    <router-view></router-view>
 </template>
 
 <script>
 
-//import MenuBarre from './components/MenuBarre.vue'
-import ListeFilm from './components/ListeFilm.vue'
-
-export default {
-  name: 'App',
-  components: {
-    ListeFilm
-  }, 
-  data: () => {
-    return {
-      
-    }
-  },
-  methods: {
-    
-  }
-}
 </script>
 
 <style>
