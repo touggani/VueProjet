@@ -2,7 +2,7 @@
     <div class="menu-barre">
         <div id="mySidenav" class="sidenav">
           <div><a href="#" ><img src="../illustration/logo.png" id="logo"></a></div>
-          <div><a href="#"><img src="../illustration/logo-cinema.png"><span class="titre-menu">FILM</span></a></div>
+          <div><a href="/liste-film"><img src="../illustration/logo-cinema.png"><span class="titre-menu">FILM</span></a></div>
           <div><a href="#"><img src="../illustration/logo-cinema.png"><span class="titre-menu">SÉRIE</span></a></div>
           <div><a href="#"><img src="../illustration/logo-cinema.png"><span class="titre-menu">INSCRIPTION</span></a></div>
           <div><a href="#"><img src="../illustration/logo-cinema.png"><span class="titre-menu">ALÉATOIRE</span></a></div>
@@ -15,7 +15,7 @@
 
 <script>
 export default {
-  name: 'App',
+  name: 'MenuBarre',
   components: {
   }, 
   data: () => {
@@ -36,7 +36,7 @@ export default {
 a{text-decoration: none;}
 
 #mySidenav{
-  position: absolute;
+  position: fixed;
   left: -10px;
   top: -10px;
   transition: 0.3s;
@@ -47,6 +47,7 @@ a{text-decoration: none;}
   color: white;
   border-radius: 0 5px 5px 0;
   background-color: rgb(0, 0, 0);
+  z-index: 1000;
 }
 #mySidenav:hover {width: 200px;left: 0;}
 

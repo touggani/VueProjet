@@ -10,8 +10,8 @@
         <h1>FILM POPULAIRE</h1>
         <div class="derniere-sortie">
             <div  v-for="item in populaire" :key="item.id" class="film" v-bind:id="item.id">
-                <img v-bind:src="'http://image.tmdb.org/t/p/w500/' + item.poster_path" width='100px'>
-                <p>{{item.title}}</p>
+                <a v-bind:href="'/detail-film/'+ item.id"><img v-bind:src="'http://image.tmdb.org/t/p/w500/' + item.poster_path" width='100px'>
+                <p>{{item.title}}</p></a>
             </div>
         </div>
     </div>
