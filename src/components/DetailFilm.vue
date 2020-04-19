@@ -30,7 +30,7 @@ import MenuBarre from './MenuBarre'
 
 
 export default {
-  name: 'App',
+  name: 'DetailFilm',
   components: {
     MenuBarre
   }, 

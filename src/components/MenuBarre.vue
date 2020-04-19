@@ -1,9 +1,9 @@
 <template>
     <div class="menu-barre">
         <div id="mySidenav" class="sidenav">
-          <div><a href="#" ><img src="../illustration/logo.png" id="logo"></a></div>
+          <div><a href="/" ><img src="../illustration/logo.png" id="logo"></a></div>
           <div><a href="/liste-film"><img src="../illustration/logo-cinema.png"><span class="titre-menu">FILM</span></a></div>
-          <div><a href="#"><img src="../illustration/logo-cinema.png"><span class="titre-menu">SÉRIE</span></a></div>
+          <div><a href="/liste-serie"><img src="../illustration/logo-cinema.png"><span class="titre-menu">SÉRIE</span></a></div>
           <div><a href="#"><img src="../illustration/logo-cinema.png"><span class="titre-menu">INSCRIPTION</span></a></div>
           <div><a href="#"><img src="../illustration/logo-cinema.png"><span class="titre-menu">ALÉATOIRE</span></a></div>
           <div><a href="#"><img src="../illustration/logo-cinema.png"><span class="titre-menu">BOUTIQUE</span></a></div>

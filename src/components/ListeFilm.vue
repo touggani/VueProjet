@@ -1,5 +1,6 @@
 <template>
     <div id='liste-film'>
+        <MenuBarre/>
         <h1>DERNIÈRE SORTIE</h1>
         <div class="derniere-sortie">
             <div  v-for="item in derniereSorties" :key="item.id" class="film" v-bind:id="item.id" >
@@ -18,9 +19,13 @@
 </template>
 <script>
 import axios from 'axios'
+import MenuBarre from './MenuBarre'
 
 export default {
- name: 'search',
+ name: 'ListeFilm',
+ components: {
+    MenuBarre
+  },
  data () {
   return {
    derniereSorties: '',

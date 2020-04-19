@@ -1,10 +1,11 @@
 <template>
     <div class="accueil">
-        <div class="carousel">
+      <MenuBarre/>
+       <!--<div class="carousel">
             <img v-bind:src="list[imageIndex]">
         </div>
         <button v-on:click="getPreviewImage()">Precedent</button>
-        <button v-on:click="getNextImage()">Suivant</button>
+        <button v-on:click="getNextImage()">Suivant</button>-->
     </div>
 </template>
 
@@ -12,16 +13,16 @@
 //import laligneverte from '../assets/laligneverte.jpg'
 //import meninblack from '../assets/meninblack.jpg'
 //import ingloriousbasterds from '../assets/ingloriousbasterds.jpg'
-
+import MenuBarre from './MenuBarre'
 
 export default {
-  name: 'accueil',
+  name: 'Accueil',
   components: {
+    MenuBarre
   }, 
   data: () => {
     return {
-      id: 0,
-      detail: ''
+      
     }
   }
 }
