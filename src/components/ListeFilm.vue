@@ -17,58 +17,44 @@
         </div>
     </div>
 </template>
+
 <script>
 import axios from 'axios'
 import MenuBarre from './MenuBarre'
 
 export default {
- name: 'ListeFilm',
- components: {
-    MenuBarre
-  },
- data () {
-  return {
-   derniereSorties: '',
-   populaire: ''
-
-  }
- },
- created() {
-    this.getupcoming();
-    this.getPopular();
-  },
- methods: {
-    getupcoming() {
-        axios.get('https://api.themoviedb.org/3/movie/upcoming?api_key=1a260002e6b25560efb27f6c948b8e62&language=en-US&page=1')   
-        .then(derniereSorties => (this.derniereSorties = derniereSorties.data.results))
-        .catch(error => console.log(error))
+    name: 'ListeFilm',
+    components: {
+        MenuBarre
     },
-    getPopular() {
-        axios.get('https://api.themoviedb.org/3/movie/popular?api_key=1a260002e6b25560efb27f6c948b8e62&language=en-US&page=1')   
-        .then(populaire => (this.populaire = populaire.data.results))
-        .catch(error => console.log(error))
+    data () {
+        return {
+            derniereSorties: '',
+            populaire: ''
+        }
+    },
+    created() {
+        this.getupcoming();
+        this.getPopular();
+    },
+    methods: {
+        getupcoming() {
+            axios.get('https://api.themoviedb.org/3/movie/upcoming?api_key=1a260002e6b25560efb27f6c948b8e62&language=en-US&page=1')   
+            .then(derniereSorties => (this.derniereSorties = derniereSorties.data.results))
+            .catch(error => console.log(error))
+        },
+        getPopular() {
+            axios.get('https://api.themoviedb.org/3/movie/popular?api_key=1a260002e6b25560efb27f6c948b8e62&language=en-US&page=1')   
+            .then(populaire => (this.populaire = populaire.data.results))
+            .catch(error => console.log(error))
+        }
     }
- }
 }
 </script>
 
 <style>
-h1{
-    text-align: center;
-}
+#liste-film h1{text-align: center;}
 a{text-decoration: none;color: black;}
-.derniere-sortie {
-    margin-top: 4%;
-    column-count: 4;
-    width: 65%;
-    margin-left: 17%;
-}
-.film{
-    padding-top: 0%;
-    padding-bottom: 25%;
-    font-family: 'comfortaa';
-    text-align: center;
-}
-
-
+.derniere-sortie {margin-top: 4%;column-count: 4;width: 65%;margin-left: 17%;}
+.film{padding-top: 0%;padding-bottom: 25%;font-family: 'comfortaa';text-align: center;}
 </style>
