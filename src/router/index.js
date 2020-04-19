@@ -4,6 +4,7 @@ import ListeFilm from '../components/ListeFilm.vue';
 import Accueil from '../components/Accueil.vue';
 import ListeSerie from '../components/ListeSerie.vue';
 import DetailSerie from '../components/DetailSerie.vue';
+import Recherche from '../components/Recherche.vue';
 
 /*
  Paths are resolved in the order of the list.
@@ -15,5 +16,6 @@ export const routes = [
     { path: '/liste-film', component: ListeFilm, name: 'ListeFilm' },
     { path: '/liste-serie', component: ListeSerie, name: 'ListeSerie' },
     { path: '/detail-serie/:id', component: DetailSerie, name: 'DetailSerie' },
+    { path: '/recherche', component: Recherche, name: 'Recherche' },
     { path: '*', component: NotFound, name: '404' },
 ];
