@@ -5,6 +5,7 @@ import Accueil from '../components/Accueil.vue';
 import ListeSerie from '../components/ListeSerie.vue';
 import DetailSerie from '../components/DetailSerie.vue';
 import Recherche from '../components/Recherche.vue';
+import Aleatoire from '../components/Aleatoire.vue';
 
 /*
  Paths are resolved in the order of the list.
@@ -18,4 +19,5 @@ export const routes = [
     { path: '/detail-serie/:id', component: DetailSerie, name: 'DetailSerie' },
     { path: '/recherche', component: Recherche, name: 'Recherche' },
     { path: '*', component: NotFound, name: '404' },
+    { path: '/aleatoire', component: Aleatoire, name: 'Aleatoire'}
 ];
