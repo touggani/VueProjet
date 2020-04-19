@@ -5,22 +5,22 @@ Pour cela, nous avons utilisés une api nommé [The movie DataBase (TMDB)](https
 
 ## Notre site est découpé en differentes catégories:
 
-### 1- Composant Menu
+### 1- Composant Menu. 
 Ce composant est utilisé dans toute les pages. Il permet à l'utilisateur de se deplacer plus simplement sur le site.
 
 
 
-### 2- L'accueil
-Composant vue 
+### 2- L'accueil. 
+Composant vue  
 Pour y accéder il suffit de lancer le localhost. Son lien route est: '/'. Cette page présente briévement le concept du site web.
 
 
 
 ### 3- Les films
 
-**ListeFilm** : Composant vue
+**ListeFilm** : Composant vue. 
 Le lien route pour accéder à cette page est: '/liste-film'. Ce composant affiche tous les films appelés de l'API.
-**Concept utilisés**:
+**Concept utilisés**:  
     * Appel d’une API REST
     * Gestion des succès et erreurs
     * Formatage des données reçues
