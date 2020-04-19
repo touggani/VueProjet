@@ -1,7 +1,7 @@
 # Explication du projet Vuejs
 
 Notre site web, réalisé avec la technologie vue, consiste à répertorier des films et autres productions cinématographique. Nous devions offrir à l'utilisateur un simple accès à ces oeuvres.
-Pour cela, nous avons utilisés une api nommé [The movie DataBase (TMDB)](https://developers.themoviedb.org/3/getting-started/introduction).
+Pour cela, nous avons utilisés une api nommé [TMDB API](https://developers.themoviedb.org/3/getting-started/introduction) créé par [The Movie DataBase](https://www.themoviedb.org).
 
 ## Notre site est découpé en differentes catégories:
 
