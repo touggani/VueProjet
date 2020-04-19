@@ -1,19 +1,18 @@
 <template>
     <div id='liste-film'>
         <MenuBarre/>
-        <h1>DERNIÈRE SORTIE</h1>
-        <button style="margin-left:100px;" v-on:click="getupcoming()">Add 1</button>
+        <h1>LES SERIES LES MIEUX NOTÉS</h1>
         <div class="derniere-sortie">
             <div  v-for="item in derniereSorties" :key="item.id" class="film" v-bind:id="item.id" >
-                <a v-bind:href="'/detail-film/'+ item.id"><img v-bind:src="'http://image.tmdb.org/t/p/w500/' + item.poster_path" width='100px'>
+                <a v-bind:href="'/detail-serie/'+ item.id"><img v-bind:src="'http://image.tmdb.org/t/p/w500/' + item.poster_path" width='100px'>
                 <p>{{item.name}}</p></a>
             </div>
         </div> 
         <h1>FILM POPULAIRE</h1>
         <div class="derniere-sortie">
             <div  v-for="item in populaire" :key="item.id" class="film" v-bind:id="item.id">
-                <a v-bind:href="'/detail-film/'+ item.id"><img v-bind:src="'http://image.tmdb.org/t/p/w500/' + item.poster_path" width='100px'>
-                <p>{{item.title}}</p></a>
+                <a v-bind:href="'/detail-serie/'+ item.id"><img v-bind:src="'http://image.tmdb.org/t/p/w500/' + item.poster_path" width='100px'>
+                <p>{{item.name}}</p></a>
             </div>
         </div>
     </div>
@@ -38,15 +37,16 @@ export default {
     created() {
         this.getupcoming();
         this.getPopular();
+        console.log(this.derniereSorties);
     },
     methods: {
         getupcoming() {
-            axios.get('https://api.themoviedb.org/3/tv/latest?api_key=1a260002e6b25560efb27f6c948b8e62&language=fr-FR')   
-            .then(derniereSorties => (this.derniereSorties = derniereSorties))
+            axios.get('https://api.themoviedb.org/3/tv/top_rated?api_key=1a260002e6b25560efb27f6c948b8e62&language=en-US&page=1')   
+            .then(derniereSorties => (this.derniereSorties = derniereSorties.data.results))
             .catch(error => console.log(error))
         },
         getPopular() {
-            axios.get('https://api.themoviedb.org/3/movie/popular?api_key=1a260002e6b25560efb27f6c948b8e62&language=en-US&page=1')   
+            axios.get('https://api.themoviedb.org/3/tv/popular?api_key=1a260002e6b25560efb27f6c948b8e62&language=en-US&page=1')   
             .then(populaire => (this.populaire = populaire.data.results))
             .catch(error => console.log(error))
         }
