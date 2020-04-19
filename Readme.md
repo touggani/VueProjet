@@ -48,3 +48,5 @@ Le lien route pour accéder à cette page est: '/detail-film/{id-film}'. Cette p
 * Liaison de données
 * Rendu déclaratif des variables
 
+### Complément. 
+Vous retrouverez la configuration du route dans VueProjet/src/router/index.js
