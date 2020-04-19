@@ -19,7 +19,7 @@ Pour y accéder il suffit de lancer le localhost. Son lien route est: '/'. Cette
 ### 3- Les films
 
 **ListeFilm** : Composant vue. 
-Le lien route pour accéder à cette page est: '/liste-film'. Ce composant affiche tous les films appelés de l'API.
+Le lien route pour accéder à cette page est: '/liste-film'. Ce composant affiche tous les films appelés de l'API.  
 **Concept utilisés**:  
 * Appel d’une API REST
 * Gestion des succès et erreurs
@@ -34,9 +34,9 @@ Le lien route pour accéder à cette page est: '/liste-film'. Ce composant affic
 * Rendu déclaratif des variables
 
 **DetailFilm**: Composant vue
-Le lien route pour accéder à cette page est: '/detail-film/{id-film}'. Cette page affiche plus detail sur le film selectionné sur la page ListeFilm. Nous avons des informations tels que le nom du film, sa durée, ses genres, son affiche, sa bande-annonce, son résumé ...
+Le lien route pour accéder à cette page est: '/detail-film/{id-film}'. Cette page affiche plus detail sur le film selectionné sur la page ListeFilm. Nous avons des informations tels que le nom du film, sa durée, ses genres, son affiche, sa bande-annonce, son résumé ...  
 **Concept utilisés**:
-    * Appel d’une API REST
+* Appel d’une API REST
 * Gestion des succès et erreurs
 * Formatage des données reçues
 * Configuration du router
